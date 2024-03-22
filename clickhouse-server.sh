@@ -1,0 +1,8 @@
+#!/bin/sh
+
+docker run -d -e CLICKHOUSE_DB="$CLICKHOUSE_DATABASE" \
+-e CLICKHOUSE_USER="$CLICKHOUSE_USER" \
+-e CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT=1 \
+-e CLICKHOUSE_PASSWORD="$CLICKHOUSE_PASSWORD" \
+-p 9000:9000 -p 8123:8123 --name "clickhouse-server-$GITHUB_RUN_ID" \
+clickhouse/clickhouse-server:"$INPUT_TAG"
