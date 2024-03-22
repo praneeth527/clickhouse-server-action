@@ -1,9 +1,9 @@
-name: 'ClickHouse Server Action'
+name: 'ClickHouse Server GitHub Action'
 description: 'A docker container action for running ClickHouse server to run tests or simple actions'
 author: 'Praneeth Kumar Reddy (praneeth527)'
 
 branding:
-  icon: 'database'
+  icon: 'server'
   color: 'yellow'
 
 inputs:
